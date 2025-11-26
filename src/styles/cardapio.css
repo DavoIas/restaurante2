@@ -1,0 +1,46 @@
+.carousel-infinito {
+  width: 100%;
+  overflow: hidden;
+  background: #111;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 15px;
+}
+.carousel-track img {
+  width: 640px;
+  height: 800px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 5rem;
+}
+
+.carousel-infinito h2{
+  font-size: 5rem;
+  text-align: center;
+  color: #f8b014;
+  margin-bottom: 3rem;
+  margin-top: 5rem;
+}
+/* animação infinita */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* move metade da track para o loop */
+  }
+}
+
+/* RESPONSIVO */
+@media (max-width: 1200px) {
+  .carousel-track img {
+    width: 320px;
+    height: 400px;
+  }
+
+  .carousel-infinito h2{
+    font-size: 2rem;
+  }
+}

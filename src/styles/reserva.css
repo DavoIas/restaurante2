@@ -1,0 +1,180 @@
+
+/* ============================
+   CONTATO
+============================ */
+#reserva {
+    position: relative;
+    padding: 5% 8%;
+    text-align: center;
+    background-image: url(../images/footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+#reserva::before {
+    content: "";
+    position: absolute;
+    inset: 0; /* cobre todo o elemento */
+    background: rgba(0, 0, 0, 0.5); /* cor do overlay */
+    z-index: 1;
+}
+
+#reserva * {
+    position: relative;
+    z-index: 2;
+}
+
+#reserva h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: rgb(255, 255, 255);
+}
+
+#reserva p {
+    font-size: 1.1rem;
+    color: #ffffff;
+}
+
+#reserva form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#reserva input,
+#reserva textarea {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Cinzel', serif;
+    font-size: 1rem;
+}
+
+#reserva textarea {
+    min-height: 400px; /* aumenta a altura do campo de observações */
+}
+
+#reserva button {
+    background-color: var(--preto);
+    color: #f8b014;
+    padding: 1%;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 1rem;
+}
+
+#reserva button:hover {
+    background-color: #333;
+}
+
+.reserva-container {
+    display: flex;             /* coloca formulário + mapa lado a lado */
+    align-items: flex-start;
+    justify-content: center;
+    gap: 50px;                 /* espaçamento entre eles */
+    margin-top: 40px;
+}
+
+.reserva-form {
+    max-width: 600px;
+    flex: 1;
+    margin-left: 10%;
+}
+
+.reserva-mapa {
+    flex: 1;
+}
+
+.reserva-box {
+    border: 2px solid #f8b014; /* borda vermelha */
+    padding: 40px;
+    border-radius: 12px; /* cantos arredondados */
+    background-color: #000000; /* fundo escuro elegante */
+    max-width: 600px;
+    width: 100%;
+}
+
+.map-box{
+    background-color: rgba(0, 0, 0, 0.8);
+    border-color: rgba(255, 0, 0, 0.8);
+    width: 70%;
+    height: 1000px;
+    margin-left: 15%;
+    border-radius: 50px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.map-box h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.map-box iframe {
+    width: 100%;
+    height: 900px;
+    border: 0;
+    border-radius: 20px;
+}
+
+@media (max-width: 1024px) {
+    .map-box {
+        width: 80%;
+        height: 1000px;
+        margin-left: 10%;
+        border-radius: 30px;
+    }
+
+    .map-box iframe{
+        width: 80%;
+        height: 850px;
+    }
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+    .reserva-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .reserva-form {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .map-box {
+        width: 400px;
+        height: 500px;
+        margin-left: 10%;
+        border-radius: 30px;
+    }
+
+    .map-box iframe{
+        width: 100%;
+        height: 400px;
+    }
+
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .map-box {
+        width: 100%;
+        height: 500px;
+        margin-left: 0;
+        border-radius: 20px;
+    }
+
+    .map-box h2 {
+        font-size: 1.5rem;
+    }
+}

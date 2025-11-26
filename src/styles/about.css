@@ -1,0 +1,24 @@
+/* ============================
+   SEÇÃO SOBRE
+============================ */
+#about {
+    padding: 5% 8%;
+}
+
+#about h2 {
+    font-size: clamp(2rem, 5vw, 5rem);
+    margin-bottom: 1rem;
+    color: #f8b014;
+    text-align: center;
+}
+
+#about p {
+    font-size: clamp(1rem, 3vw, 3rem);
+    color: #ffffff;
+    text-align: justify;
+}
+
+#about span{
+    color: #f8b014;
+    font-weight: bold;
+}
