@@ -10,14 +10,14 @@
 }
 .carousel-track img {
   width: 640px;
-  height: 800px;
+  height: 600px;
   object-fit: cover;
   border-radius: 10px;
   margin-bottom: 5rem;
 }
 
 .carousel-infinito h2{
-  font-size: 5rem;
+  font-size: 3rem;
   text-align: center;
   color: #f8b014;
   margin-bottom: 3rem;
