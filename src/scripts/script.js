@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ===== Carrosséis da diversão (3 independentes) =====
   // Seleciona todos os carrosseis diversão
-document.querySelectorAll('.diversao-swiper').forEach((carrossel) => {
+document.querySelectorAll('.features-swiper').forEach((carrossel) => {
     const swiper = new Swiper(carrossel, {
         loop: true,
         slidesPerView: 1,
@@ -64,12 +64,12 @@ document.querySelectorAll('.diversao-swiper').forEach((carrossel) => {
             disableOnInteraction: false,
         },
         pagination: {
-            el: carrossel.querySelector('.diversao-pagination'),
+            el: carrossel.querySelector('.features-pagination'),
             clickable: true,
         },
         navigation: {
-            nextEl: carrossel.querySelector('.diversao-next'),
-            prevEl: carrossel.querySelector('.diversao-prev'),
+            nextEl: carrossel.querySelector('.features-next'),
+            prevEl: carrossel.querySelector('.features-prev'),
         },
         on: {
             init: function () {
